@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.6;
+  background-color: #FFE9D0;
+  color: #444;
+  
+}
+
+header {
+  background: #B1AFFF;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav {
+ display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 5px;
+  position: sticky;
+}
+
+.logo-img {
+  width: 150px; /* Sesuaikan ukuran logo di sini */
+  height: auto;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+  position: sticky;
+}
+
+nav li {
+  list-style-type: none;
+  position: sticky;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.home {
+  background: url('img/nature-bg.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.home .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.home .content-description {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.home .content-description h1 {
+  font-size: 3rem;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.home .top-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #B1AFFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.home .top-button:hover {
+  background: #BBB1FF;
+}
+
+.home .content-description p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: #444;
+}
+
+.home .content-description button {
+  background: #B1AFFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.home .content-description button:hover {
+  background: #BBB1FF;
+}
+
+.home .content-image img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.about, .services, .contact {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.about {
+  background-color: #FFFED3;
+}
+
+.about-content {
+  display: inline-block;
+  padding: 2rem;
+  border: 1px solid #B1AFFF;
+  cursor: pointer;
+  transition: background 0.3s, border 0.3s;
+  color: #444;
+}
+
+.about-content:hover {
+  background: #B1AFFF;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.services {
+  background-color: #BBE9FF;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch; /* Changed to make services equal height */
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.service {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #B1AFFF;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+.service img {
+  max-width: 100%;
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Ensure the image covers the entire area */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.service h3 {
+  margin-bottom: 10px;
+}
+
+.service p {
+  color: #444;
+  flex-grow: 1; /* Allows the paragraph to take up available space */
+}
+
+.service-link {
+  display: inline-block;
+  background-color: #B1AFFF;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin-top: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.service-link:hover {
+  background-color: #BBB1FF;
+}
+
+.contact {
+  background-color: #FFE9D0;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+.img-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-contact img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+footer {
+  background-color: #B1AFFF;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  margin-top: 2rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+.social-media {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #B1AFFF;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-media ul li {
+  margin-bottom: 10px;
+}
+
+.social-media ul li a {
+  color: #B1AFFF;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-media ul li a:hover {
+  color: #444;
+}
+/* Form Container */
+.form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #B1AFFF;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #B1AFFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-container button:hover {
+  background-color: #BBB1FF;
+}
+
+.form-container p {
+  text-align: center;
+}
+
+.form-container a {
+  color: #B1AFFF;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.form-container a:hover {
+  color: #BBB1FF;
+}
+
+/* Authentication Links */
+.auth-links {
+  text-align: right;
+  padding: 1rem;
+  background-color: #B1AFFF;
+  color: #fff;
+}
+
+.auth-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.auth-links a:hover {
+  color: #444;
+}
+
+
+/* Devices with screen width 1200px and below */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-direction: column;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+
+/* Devices with screen width 768px and below */
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+  main aside {
+    align-self: stretch;
+  }
+}
